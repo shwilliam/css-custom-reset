@@ -5,7 +5,7 @@ const figlet = require('figlet');
 const files = require('./lib/files');
 const inquirer = require('./lib/inquirer');
 const {camelize} = require('./lib/utils');
-const {getMeyerReset, getMiniReset} = require('./lib/css');
+const {getMeyerReset, getMiniReset, getNormalize} = require('./lib/css');
 
 clear();
 
@@ -33,7 +33,7 @@ const run = async () => {
       css = getMeyerReset(userOptions);
       break;
     case 'Normalize':
-      // css = getNormalize(userOptions);
+      css = getNormalize(userOptions);
       break;
     case 'Mini Reset':
       css = getMiniReset(userOptions);
