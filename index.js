@@ -5,7 +5,7 @@ const figlet = require('figlet');
 const files = require('./lib/files');
 const inquirer = require('./lib/inquirer');
 const {camelize} = require('./lib/utils');
-const {getMeyerReset} = require('./lib/css');
+const {getMeyerReset, getMiniReset} = require('./lib/css');
 
 clear();
 
@@ -22,7 +22,7 @@ if (files.exists('reset.css')) {
 
 const run = async () => {
   const {baseCSS} = await inquirer.askWhichCSSBase();
-  const options = await inquirer.askForOptions();
+  const options = await inquirer.askForOptions(baseCSS);
   userOptions = {};
   options.selected.map(option => {
     userOptions[camelize(String(option))] = true;
@@ -36,7 +36,7 @@ const run = async () => {
       // css = getNormalize(userOptions);
       break;
     case 'Mini Reset':
-      // css = getMiniReset(userOptions);
+      css = getMiniReset(userOptions);
       break;
   }
   console.log(css);
