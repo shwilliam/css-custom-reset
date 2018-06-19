@@ -16,7 +16,7 @@ console.log(
 );
 
 if (files.exists('reset.css')) {
-  console.log(chalk.red('Woops! Looks like a reset.css file already exists here.'));
+  console.log(chalk.red('Woops! Looks like a reset.css file already exists here.\nDelete it to create a new one.'));
   process.exit();
 }
 
@@ -39,6 +39,6 @@ const run = async () => {
       css = getMiniReset(userOptions);
       break;
   }
-  console.log(css);
+  files.makeCSS(css);
 }
 run();
