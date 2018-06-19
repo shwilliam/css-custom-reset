@@ -5,6 +5,7 @@ const figlet = require('figlet');
 const files = require('./lib/files');
 const inquirer = require('./lib/inquirer');
 const {camelize} = require('./lib/utils');
+const {getMeyerReset} = require('./lib/css');
 
 clear();
 
@@ -26,5 +27,18 @@ const run = async () => {
   options.selected.map(option => {
     userOptions[camelize(String(option))] = true;
   });
+  let css = '';
+  switch(baseCSS) {
+    case 'Eric Meyer CSS Reset (v2)':
+      css = getMeyerReset(userOptions);
+      break;
+    case 'Normalize':
+      // css = getNormalize(userOptions);
+      break;
+    case 'Mini Reset':
+      // css = getMiniReset(userOptions);
+      break;
+  }
+  console.log(css);
 }
 run();
