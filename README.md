@@ -6,12 +6,13 @@ Quickly create a customized version of your favorite CSS reset file by specifyin
 
 ## Installation
 
-Assuming you have Node.js & yarn installed, download this repo and run the following in the project's root directory:
+Assuming you have Node.js installed, download this repo and run the following in the project's root directory:
 
 ```
 $ yarn get
 ```
+(alternatively, if you don't have yarn installed, `npm install -g`)
 
 ## Usage
 
-After installation, simply run `reset-css` in the directory you wish to create your reset.css file in and answer the on-screen prompts.
+After installation, simply run the command `reset-css` in the directory you wish to create your reset.css file in and answer the on-screen prompts.
