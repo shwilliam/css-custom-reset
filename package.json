@@ -1,6 +1,6 @@
 {
   "name": "css-custom-reset",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "William L <w-lindvall@outlook.com>",
   "description": "Personalized CSS reset CLI",
@@ -22,5 +22,10 @@
   ],
   "bin": {
     "reset-css": "./index.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
   }
 }
