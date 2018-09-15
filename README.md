@@ -2,14 +2,14 @@
 
 Quickly create a customized version of your favorite CSS reset file by specifying the parts you wish to include (currently supports [Normalize.css](https://necolas.github.io/normalize.css/), [minireset.css](https://jgthms.com/minireset.css/) & [Eric Meyer's CSS reset](https://meyerweb.com/eric/tools/css/reset/)).
 
-![Usage screengrab](https://user-images.githubusercontent.com/38357771/41611159-98b1e56e-7421-11e8-8018-d51d63269e6a.PNG)
+![Usage screengrab](https://user-images.githubusercontent.com/38357771/45585893-309d8b00-b930-11e8-8b33-3e6723f2b0f0.PNG)
 
 ## Installation
 
 Assuming you have Node.js installed, download this repo and run the following in the project's root directory:
 
 ```
-$ yarn get
+$ yarn save
 ```
 (alternatively, if you don't have yarn installed, `npm install -g`)
 

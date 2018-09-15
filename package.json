@@ -7,7 +7,7 @@
   "repository": "github:shwilliam/css-custom-reset",
   "license": "MIT",
   "scripts": {
-    "get": "npm install -g"
+    "save": "npm install -g"
   },
   "dependencies": {
     "chalk": "^2.4.1",

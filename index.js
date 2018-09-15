@@ -13,7 +13,7 @@ clear();
 
 console.log(
   chalk.yellow(
-    figlet.textSync('css reset', { horizontalLayout: 'half' }),
+    figlet.textSync('reset-css', { horizontalLayout: 'half' }),
   ),
 );
 
