@@ -1,14 +1,11 @@
 {
   "name": "css-custom-reset",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "author": "William L <w-lindvall@outlook.com>",
-  "description": "Personalized CSS reset CLI",
+  "description": "Quickly customize your favorite CSS reset",
   "repository": "github:shwilliam/css-custom-reset",
   "license": "MIT",
-  "scripts": {
-    "save": "npm install -g"
-  },
   "dependencies": {
     "chalk": "^2.4.1",
     "clear": "^0.1.0",
@@ -16,16 +13,18 @@
     "inquirer": "^6.0.0"
   },
   "keywords": [
-    "CSS",
+    "css",
     "reset",
-    "CLI"
+    "cli",
+    "normalize",
+    "meyerweb"
   ],
   "bin": {
     "reset-css": "./index.js"
   },
   "devDependencies": {
     "eslint": "^5.1.0",
-    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.13.0"
   }
 }
