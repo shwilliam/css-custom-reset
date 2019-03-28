@@ -4,6 +4,10 @@ Quickly create a customized version of your favorite CSS reset file by specifyin
 
 ![Usage screengrab](https://user-images.githubusercontent.com/38357771/45585893-309d8b00-b930-11e8-8b33-3e6723f2b0f0.PNG)
 
+> **This is a prototype!**
+> 
+> Please note that the parts of CSS used in this project have been hard coded and require manual updates upon new releases of the relevant CSS resets that they are based on. This project was created as a proof of concept and would ideally parse the base CSS reset files and programmatically generate the reset options.
+
 ## Installation
 
 Assuming you have Node.js installed, download this repo and run `npm install -g` project's root directory.
